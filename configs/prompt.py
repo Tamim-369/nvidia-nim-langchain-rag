@@ -3,7 +3,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 prompt = ChatPromptTemplate.from_template(
 """
-Answer the questions based on the provided context and conversation history and your thought but your thought should not be strictly against the context. Please provide the most accurate response based on the question and don't just blindly say without thinking about the context and the question properly.
+Analyze the context properly answer questions based on the context only. You should only think about the context and analyzing the context nothing else.
 <context>
 {context}
 <context>
