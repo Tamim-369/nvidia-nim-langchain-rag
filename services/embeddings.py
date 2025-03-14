@@ -6,7 +6,6 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.vectorstores import FAISS
 from configs import client
 import os
-# Define the vectorEmbeddings function
 def vectorEmbeddings():
     embeddings = NVIDIAEmbeddings()
     faiss_index_path = "./faiss_index"
